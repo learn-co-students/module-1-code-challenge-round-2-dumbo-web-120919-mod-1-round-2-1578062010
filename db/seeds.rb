@@ -23,5 +23,15 @@ puts "Creating roles..."
 # * and a role belongs to an actor.                         *
 # ***********************************************************
 # Create Roles Here
-
+Role.create(
+    movie_id: mean_girls.id,
+    actor_id: lindsay_lohan.id, 
+    salary: 1000000,
+    character_name: "Rei Rei"
+)
+# create_table "roles", force: :cascade do |t|
+#     t.integer "movie_id"
+#     t.integer "actor_id"
+#     t.integer "salary"
+#     t.string "character_name"
 puts "Seeding done!"
