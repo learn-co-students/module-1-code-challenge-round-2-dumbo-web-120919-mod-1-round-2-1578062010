@@ -64,7 +64,7 @@ Before working on the rest of the deliverables, you will need to create a migrat
 - A `Role` belongs to a `Movie`, and a `Role` also belongs to an `Actor`. In your migration, create any columns your `roles` table will need to establish these relationships.
 - The `roles` table should also have:
   - A `salary` column that stores an integer.
-  - A `character_name` column that stores a string.
+  - A `character_name` column that stores a string. 
 
 After creating your migration, use the `seeds.rb` file to create instances of your `Role` class so you can test your code.
 
