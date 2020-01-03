@@ -3,6 +3,7 @@
 puts "Deleting movie/actor data..."
 Movie.destroy_all
 Actor.destroy_all
+Role.destroy_all
 
 puts "Creating movies..."
 mean_girls = Movie.create(title: "Mean Girls", box_office_earnings: 129_000_000)
@@ -23,5 +24,17 @@ puts "Creating roles..."
 # * and a role belongs to an actor.                         *
 # ***********************************************************
 # Create Roles Here
+character_name = ["Josh","Haley", "Jake", "Ying","Rachel"]
+5.times do 
+movie = Movie.all.sample
+actor = Actor.all.sample
+    Role.create(
+    movie_id: movie.id,
+    actor_id: actor.id,
+    salary: rand(5000..100000),
+    character_name: character_name.sample
+)
+end
+
 
 puts "Seeding done!"
