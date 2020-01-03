@@ -23,5 +23,17 @@ puts "Creating roles..."
 # * and a role belongs to an actor.                         *
 # ***********************************************************
 # Create Roles Here
+r1 = Role.create(
+  movie_id: mean_girls.id, 
+  actor_id: lindsay_lohan.id,
+  salary: 100,
+  character_name: lindsay_lohan.name
+)
+r2 = Role.create(
+  movie_id: spice_world.id,
+  actor_id: tina_fey.id,
+  salary: 200,
+  character_name: tina_fey.name
+)
 
 puts "Seeding done!"
