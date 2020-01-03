@@ -24,4 +24,6 @@ puts "Creating roles..."
 # ***********************************************************
 # Create Roles Here
 
+Role.create(actor_id: lindsay_lohan.id,movie_id: mean_girls.id,salary: 100,character_name: "Alex" )
+
 puts "Seeding done!"
