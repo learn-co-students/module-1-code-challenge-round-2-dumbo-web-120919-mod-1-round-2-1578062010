@@ -74,35 +74,35 @@ After creating your migration, use the `seeds.rb` file to create instances of yo
 
 #### Role
 
-- `Role#actor`
+- `Role#actor` #works
   - should return the `Actor` instance for this role
-- `Role#movie`
+- `Role#movie` #works
   - should return the `Movie` instance for this role
 
 #### Movie
 
-- `Movie#roles`
+- `Movie#roles`#works
   - returns a collection of all the roles for the movie
-- `Movie#actors`
+- `Movie#actors`#works
   - returns a collection of all the actors who performed in the movie
 
 #### Actor
 
-- `Actor#roles`
+- `Actor#roles` #works
   - should return a collection of all the roles that the actor has played
-- `Actor#movies`
+- `Actor#movies` #works
   - should return a collection of all the movies that the actor has performed in
 
 ### Aggregate and Association Methods
 
 #### Role
 
-- `Role#credit`
+- `Role#credit` #works
   - should return a string formatted as follows: `{insert character name}: Played by {insert actor name}`
 
 #### Movie
 
-- `Movie#cast_role(actor, character_name, salary)`
+- `Movie#cast_role(actor, character_name, salary)` #works
   - takes a `actor` (an instance of the `Actor` class), a `character_name` (string), and a `salary` (integer) as arguments, and creates a new `role` in the database associated with this movie and the actor
 - `Movie#all_credits`
   - should return an Array of strings with all the roles for this movie formatted as follows: ["{insert character name}: Played by {insert actor name}", "{insert character name}: Played by {insert actor name}", ...]
